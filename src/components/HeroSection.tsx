@@ -133,11 +133,11 @@ const HeroSection = () => {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="relative order-1 md:order-2"
           >
-            <div className="rounded-md overflow-hidden border border-border transition-shadow duration-500 hover:shadow-lg hover:shadow-primary/10">
+            <div className="rounded-2xl overflow-hidden border border-border transition-shadow duration-500 hover:shadow-lg hover:shadow-primary/10 max-w-[90%] mx-auto">
               <img
                 src={heroImg}
                 alt="Licensed electrician working on a residential electrical panel in the Lower Mainland BC"
-                className="w-full h-[220px] sm:h-auto object-cover"
+                className="w-full h-[200px] sm:h-auto object-cover"
                 loading="eager"
               />
             </div>

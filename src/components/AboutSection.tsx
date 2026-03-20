@@ -27,12 +27,12 @@ const AboutSection = () => {
           </p>
 
           <p className="mt-6 text-sm md:text-base font-semibold text-black leading-snug max-w-md border-l-4 border-[#14B897] pl-4">
-  “We don’t just install electrical systems.
-  <br />
-  <span className="text-[#14B897]">
-    We elevate the spaces people live and work in
-  </span>”
-</p>
+            “We don’t just install electrical systems.
+            <br />
+            <span className="text-[#14B897]">
+              We elevate the spaces people live and work in
+            </span>”
+          </p>
         </motion.div>
 
         <div className="grid sm:grid-cols-3 gap-8">
@@ -43,14 +43,20 @@ const AboutSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: i * 0.1 }}
-              whileHover={{ y: -4 }}
-              className="group p-5 rounded-md border border-transparent hover:border-border hover:bg-background transition-colors duration-300 cursor-default"
+              whileHover={{ y: -6, scale: 1.03 }}
+              className="group p-5 rounded-lg bg-gray-50 border border-gray-100 hover:bg-[#14B897] transition-all duration-300 cursor-default"
             >
-              <div className="w-10 h-10 rounded-md bg-primary/10 flex items-center justify-center mb-4 transition-transform duration-300 group-hover:scale-110">
-                <v.icon className="w-5 h-5 text-primary" />
+              <div className="w-10 h-10 rounded-md bg-primary/10 flex items-center justify-center mb-4 transition-all duration-300 group-hover:bg-white/20 group-hover:scale-110">
+                <v.icon className="w-5 h-5 text-primary group-hover:text-white" />
               </div>
-              <h3 className="text-base font-semibold text-heading mb-1">{v.title}</h3>
-              <p className="text-sm text-body leading-relaxed">{v.text}</p>
+
+              <h3 className="text-base font-semibold text-heading mb-1 group-hover:text-white">
+                {v.title}
+              </h3>
+
+              <p className="text-sm text-body leading-relaxed group-hover:text-white/90">
+                {v.text}
+              </p>
             </motion.div>
           ))}
         </div>
