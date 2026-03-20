@@ -27,14 +27,14 @@ const Navbar = () => {
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
+          
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2 group">
-            <div className="w-8 h-8 bg-primary rounded-md flex items-center justify-center transition-transform duration-200 group-hover:scale-110">
-              <span className="text-primary-foreground font-bold text-sm">G</span>
-            </div>
-            <span className="font-bold text-lg text-heading tracking-tight">
-              GOODMAN <span className="font-medium">ELECTRIC</span>
-            </span>
+          <a href="#" className="flex items-center group">
+            <img
+              src="/logo.png"
+              alt="Goodman Electric Logo"
+              className="h-10 w-auto transition-transform duration-200 group-hover:scale-105"
+            />
           </a>
 
           {/* Desktop links */}
