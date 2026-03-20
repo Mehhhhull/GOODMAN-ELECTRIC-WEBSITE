@@ -22,10 +22,7 @@ const AboutSection = () => {
             Your Trusted <span className="bg-[#14B897] text-white px-2 py-1">Electrical Partner</span>
           </h2>
           <p className="text-body leading-relaxed">
-            At Goodman Electric, we bring years of hands-on experience to every
-            project. From panel upgrades to full commercial fit-outs, our licensed
-            electricians deliver work you can trust — safe, clean, and built to
-            last.
+           At Goodman Electric, we take pride in delivering clean, high-quality electrical installations built for long-term safety, reliability, and performance. Whether you’re upgrading a home, building a commercial space, or wiring a new property from the ground up, our team brings professionalism and precision to every stage of the project.
           </p>
         </motion.div>
 

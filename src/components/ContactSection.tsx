@@ -129,7 +129,7 @@ const ContactSection = () => {
                 </div>
                 <div className="flex items-center gap-3">
                   <MapPin className="w-4 h-4 text-primary" />
-                  <span>Service Area: Lower Mainland, BC</span>
+                  <span> Lower Mainland & Surrounding Regions</span>
                 </div>
               </div>
             </div>
