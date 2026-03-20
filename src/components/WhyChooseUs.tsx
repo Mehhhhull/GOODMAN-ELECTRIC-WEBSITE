@@ -20,7 +20,7 @@ const WhyChooseUs = () => {
           transition={{ duration: 0.5 }}
           className="text-3xl font-bold text-heading mb-12"
         >
-          Why Choose <span className="bg-[#14B897] text-white px-2 py-1">Goodman Electric</span>
+          Why Choose <br /> <span className="bg-[#14B897] text-white px-2 py-1">Goodman Electric</span>
         </motion.h2>
 
         <div className="space-y-0 divide-y divide-border">
