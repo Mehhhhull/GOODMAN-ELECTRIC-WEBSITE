@@ -6,7 +6,6 @@ import {
   MapPin,
   ArrowRight,
   Instagram,
-  Facebook,
 } from "lucide-react";
 
 const ContactSection = () => {
@@ -227,21 +226,12 @@ const ContactSection = () => {
 
               <div className="flex gap-4">
                 <a
-                  href="https://instagram.com/yourpage"
+                  href="https://www.instagram.com/goodmanelectricltd?igsh=Z29sbzlidGUwbWdl&utm_source=qr"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 flex items-center justify-center border border-border rounded-md hover:border-primary hover:text-primary"
                 >
                   <Instagram className="w-5 h-5" />
-                </a>
-
-                <a
-                  href="https://facebook.com/yourpage"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-10 h-10 flex items-center justify-center border border-border rounded-md hover:border-primary hover:text-primary"
-                >
-                  <Facebook className="w-5 h-5" />
                 </a>
               </div>
             </div>

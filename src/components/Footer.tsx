@@ -29,7 +29,7 @@ const Footer = () => {
           <p className="font-semibold text-heading mb-3">Connect</p>
           <div className="flex items-center gap-3">
             <a
-              href="https://instagram.com/yourpage"
+              href="https://www.instagram.com/goodmanelectricltd?igsh=Z29sbzlidGUwbWdl&utm_source=qr"
               target="_blank"
               rel="noopener noreferrer"
               className="w-9 h-9 flex items-center justify-center border border-border rounded-md hover:border-primary hover:text-primary transition-all"
