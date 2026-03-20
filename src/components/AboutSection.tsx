@@ -21,8 +21,17 @@ const AboutSection = () => {
           <h2 className="text-3xl font-bold text-heading mb-4">
             Your Trusted <br /> <span className="bg-[#14B897] text-white px-2 py-1">Electrical Partner</span>
           </h2>
+          
           <p className="text-body leading-relaxed">
-           At Goodman Electric, we take pride in delivering clean, high-quality electrical installations built for long-term safety, reliability, and performance. Whether you’re upgrading a home, building a commercial space, or wiring a new property from the ground up, our team brings professionalism and precision to every stage of the project.
+            At Goodman Electric, we take pride in delivering clean, high-quality electrical installations built for long-term safety, reliability, and performance. Whether you’re upgrading a home, building a commercial space, or wiring a new property from the ground up, our team brings professionalism and precision to every stage of the project.
+          </p>
+
+          <p className="mt-6 text-lg font-semibold text-black leading-relaxed border-l-4 border-[#14B897] pl-4">
+            “We don’t just install electrical systems.
+            <br />
+            <span className="text-[#14B897]">
+              We elevate the spaces people live and work in
+            </span>”
           </p>
         </motion.div>
 
