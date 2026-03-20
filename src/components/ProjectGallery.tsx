@@ -27,7 +27,9 @@ const ProjectGallery = () => {
           transition={{ duration: 0.5 }}
           className="mb-12"
         >
-          <h2 className="text-3xl font-bold text-heading mb-4">Recent Projects</h2>
+          <h2 className="text-3xl font-bold text-heading mb-4">
+            Recent <span className="bg-[#14B897] text-white px-2 py-1">Projects</span>
+          </h2>
           <p className="text-body max-w-xl">
             A look at some of our completed work across the Lower Mainland.
           </p>

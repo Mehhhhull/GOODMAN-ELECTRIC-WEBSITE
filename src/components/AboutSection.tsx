@@ -19,7 +19,7 @@ const AboutSection = () => {
           className="max-w-2xl mb-14"
         >
           <h2 className="text-3xl font-bold text-heading mb-4">
-            Your Trusted Electrical Partner
+            Your Trusted <span className="bg-[#14B897] text-white px-2 py-1">Electrical Partner</span>
           </h2>
           <p className="text-body leading-relaxed">
             At Goodman Electric, we bring years of hands-on experience to every

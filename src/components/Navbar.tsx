@@ -50,17 +50,6 @@ const Navbar = () => {
             ))}
           </div>
 
-          {/* Phone */}
-          <div className="hidden md:flex items-center gap-2">
-            <a
-              href="tel:6048970308"
-              className="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:text-primary/80 transition-all duration-200 hover:gap-2.5"
-            >
-              <Phone className="w-4 h-4 transition-transform duration-200 hover:rotate-12" />
-              604-897-0308
-            </a>
-          </div>
-
           {/* Mobile toggle */}
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
@@ -95,13 +84,6 @@ const Navbar = () => {
                   {link.label}
                 </motion.a>
               ))}
-              <a
-                href="tel:6048970308"
-                className="flex items-center gap-2 text-sm font-semibold text-primary pt-2 border-t border-border"
-              >
-                <Phone className="w-4 h-4" />
-                604-897-0308
-              </a>
             </div>
           </motion.div>
         )}

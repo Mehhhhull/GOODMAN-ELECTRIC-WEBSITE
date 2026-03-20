@@ -1,14 +1,18 @@
 import { motion } from "framer-motion";
-import { Phone, CheckCircle2, ArrowRight } from "lucide-react";
+import { Phone, CheckCircle2, ArrowRight, ChevronDown } from "lucide-react";
+import { useState } from "react";
 import heroImg from "@/assets/hero-electrician.jpg";
 
 const trustItems = [
   "Licensed & Insured",
   "Residential + Commercial",
   "New Builds + Renovations",
+  "Serving the Lower Mainland"
 ];
 
 const HeroSection = () => {
+  const [showPhoneDropdown, setShowPhoneDropdown] = useState(false);
+
   return (
     <section className="relative pt-24 pb-16 md:pt-32 md:pb-24 overflow-hidden bg-background">
       {/* Layered subtle gradients for depth */}
@@ -20,14 +24,6 @@ const HeroSection = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left */}
           <div>
-            <motion.p
-              initial={{ opacity: 0, y: 12 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              className="text-sm font-medium text-primary tracking-wide mb-4"
-            >
-              Licensed & Insured Electricians — Lower Mainland, BC
-            </motion.p>
 
             <motion.h1
               initial={{ opacity: 0, y: 16 }}
@@ -35,8 +31,8 @@ const HeroSection = () => {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-4xl sm:text-5xl lg:text-[3.25rem] font-extrabold leading-tight text-heading mb-6"
             >
-              Reliable Electrical Services Built for{" "}
-              <span className="text-primary">Safety & Performance</span>
+              Powering Your Vision With Precision,{" "}
+              <span className="text-primary">Integrity & Modern Electrical Expertise</span>
             </motion.h1>
 
             <motion.p
@@ -45,8 +41,7 @@ const HeroSection = () => {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-base text-body leading-relaxed mb-8 max-w-lg"
             >
-              Residential and commercial electrical services across the Lower
-              Mainland — new builds, renovations, upgrades, and maintenance.
+             Reliable electrical services for residential and commercial projects—covering new construction, renovations, upgrades, and maintenance across the Lower Mainland.
             </motion.p>
 
             <motion.div
@@ -82,23 +77,48 @@ const HeroSection = () => {
                 Request a Free Quote
                 <ArrowRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" />
               </a>
-              <a
-                href="tel:6048970308"
-                className="group inline-flex items-center gap-2 px-6 py-3 border border-border text-foreground font-semibold text-sm rounded-md hover:border-primary hover:text-primary transition-all duration-200 active:scale-[0.98]"
-              >
-                <Phone className="w-4 h-4 transition-transform duration-200 group-hover:rotate-12" />
-                Call Now
-              </a>
+              <div className="relative">
+                <button
+                  onClick={() => setShowPhoneDropdown(!showPhoneDropdown)}
+                  className="group inline-flex items-center gap-2 px-6 py-3 border border-border text-foreground font-semibold text-sm rounded-md hover:border-primary hover:text-primary transition-all duration-200 active:scale-[0.98]"
+                >
+                  <Phone className="w-4 h-4 transition-transform duration-200 group-hover:rotate-12" />
+                  Call Now
+                  <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${showPhoneDropdown ? 'rotate-180' : ''}`} />
+                </button>
+                
+                {showPhoneDropdown && (
+                  <motion.div
+                    initial={{ opacity: 0, y: -10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    className="absolute top-full mt-2 left-0 bg-white border border-border rounded-md shadow-lg z-10 min-w-[200px]"
+                  >
+                    <a
+                      href="tel:6048970308"
+                      className="flex items-center gap-3 px-4 py-3 text-sm hover:bg-gray-50 transition-colors border-b border-border"
+                      onClick={() => setShowPhoneDropdown(false)}
+                    >
+                      <Phone className="w-4 h-4 text-primary" />
+                      <div>
+                        <div className="font-semibold text-foreground">Manny</div>
+                        <div className="text-body">604-897-0308</div>
+                      </div>
+                    </a>
+                    <a
+                      href="tel:6044469360"
+                      className="flex items-center gap-3 px-4 py-3 text-sm hover:bg-gray-50 transition-colors"
+                      onClick={() => setShowPhoneDropdown(false)}
+                    >
+                      <Phone className="w-4 h-4 text-primary" />
+                      <div>
+                        <div className="font-semibold text-foreground">Nav</div>
+                        <div className="text-body">604-446-9360</div>
+                      </div>
+                    </a>
+                  </motion.div>
+                )}
+              </div>
             </motion.div>
-
-            <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.5, delay: 0.5 }}
-              className="mt-4 text-xs text-muted-foreground"
-            >
-              604-897-0308 · Free estimates on all projects
-            </motion.p>
           </div>
 
           {/* Right */}

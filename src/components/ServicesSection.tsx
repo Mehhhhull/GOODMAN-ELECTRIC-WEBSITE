@@ -34,7 +34,9 @@ const ServicesSection = () => {
           transition={{ duration: 0.5 }}
           className="mb-14 text-center"
         >
-          <h2 className="text-3xl font-bold text-heading mb-4">Our Services</h2>
+          <h2 className="text-3xl font-bold text-heading mb-4">
+            Our <span className="bg-[#14B897] text-white px-2 py-1">Services</span>
+          </h2>
           <p className="text-body max-w-xl mx-auto">
             Full-service electrical solutions for residential and commercial
             properties across the Lower Mainland.

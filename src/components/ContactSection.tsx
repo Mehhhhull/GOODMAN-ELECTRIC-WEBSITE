@@ -24,7 +24,7 @@ const ContactSection = () => {
           transition={{ duration: 0.5 }}
           className="text-3xl font-bold text-heading mb-12"
         >
-          Get In Touch
+          Get In <span className="bg-[#14B897] text-white px-2 py-1">Touch</span>
         </motion.h2>
 
         <div className="grid md:grid-cols-2 gap-12">
@@ -48,17 +48,17 @@ const ContactSection = () => {
                 <p className="text-sm text-body">We'll get back to you shortly.</p>
               </motion.div>
             ) : (
-              <form onSubmit={handleSubmit} className="space-y-4">
+              <form onSubmit={handleSubmit} className="space-y-4 bg-[#14B897] p-6 rounded-lg">
                 {[
-                  { id: "name", label: "Name", type: "text", required: true },
-                  { id: "phone", label: "Phone", type: "tel", required: false },
-                  { id: "email", label: "Email", type: "email", required: true },
+                  { id: "name", label: "Name", type: "text", required: true, placeholder: "Enter your full name" },
+                  { id: "phone", label: "Phone", type: "tel", required: false, placeholder: "604-123-4567" },
+                  { id: "email", label: "Email", type: "email", required: true, placeholder: "your.email@example.com" },
                 ].map((field) => (
                   <div key={field.id} className="relative">
                     <label
                       htmlFor={field.id}
                       className={`block text-sm font-medium mb-1 transition-colors duration-200 ${
-                        focused === field.id ? "text-primary" : "text-heading"
+                        focused === field.id ? "text-white" : "text-white/90"
                       }`}
                     >
                       {field.label}
@@ -67,6 +67,7 @@ const ContactSection = () => {
                       id={field.id}
                       type={field.type}
                       required={field.required}
+                      placeholder={field.placeholder}
                       onFocus={() => setFocused(field.id)}
                       onBlur={() => setFocused(null)}
                       className={inputClass}
@@ -77,7 +78,7 @@ const ContactSection = () => {
                   <label
                     htmlFor="message"
                     className={`block text-sm font-medium mb-1 transition-colors duration-200 ${
-                      focused === "message" ? "text-primary" : "text-heading"
+                      focused === "message" ? "text-white" : "text-white/90"
                     }`}
                   >
                     Message
@@ -85,6 +86,7 @@ const ContactSection = () => {
                   <textarea
                     id="message"
                     rows={4}
+                    placeholder="Tell us about your electrical project..."
                     onFocus={() => setFocused("message")}
                     onBlur={() => setFocused(null)}
                     className={`${inputClass} resize-none`}
@@ -92,7 +94,7 @@ const ContactSection = () => {
                 </div>
                 <button
                   type="submit"
-                  className="group w-full inline-flex items-center justify-center gap-2 px-5 py-3 bg-primary text-primary-foreground font-semibold text-sm rounded-md hover:bg-primary/90 transition-all duration-200 active:scale-[0.98]"
+                  className="group w-full inline-flex items-center justify-center gap-2 px-5 py-3 bg-white text-[#14B897] font-semibold text-sm rounded-md hover:bg-white/90 transition-all duration-200 active:scale-[0.98]"
                 >
                   Request a Quote
                   <ArrowRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" />
