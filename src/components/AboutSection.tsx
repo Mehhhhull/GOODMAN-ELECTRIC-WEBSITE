@@ -26,13 +26,13 @@ const AboutSection = () => {
             At Goodman Electric, we take pride in delivering clean, high-quality electrical installations built for long-term safety, reliability, and performance. Whether you’re upgrading a home, building a commercial space, or wiring a new property from the ground up, our team brings professionalism and precision to every stage of the project.
           </p>
 
-          <p className="mt-6 text-lg font-semibold text-black leading-relaxed border-l-4 border-[#14B897] pl-4">
-            “We don’t just install electrical systems.
-            <br />
-            <span className="text-[#14B897]">
-              We elevate the spaces people live and work in
-            </span>”
-          </p>
+          <p className="mt-6 text-sm md:text-base font-semibold text-black leading-snug max-w-md border-l-4 border-[#14B897] pl-4">
+  “We don’t just install electrical systems.
+  <br />
+  <span className="text-[#14B897]">
+    We elevate the spaces people live and work in
+  </span>”
+</p>
         </motion.div>
 
         <div className="grid sm:grid-cols-3 gap-8">
