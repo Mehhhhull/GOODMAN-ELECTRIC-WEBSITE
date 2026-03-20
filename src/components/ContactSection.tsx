@@ -1,6 +1,13 @@
 import { useState, FormEvent } from "react";
 import { motion } from "framer-motion";
-import { Phone, Mail, MapPin, ArrowRight } from "lucide-react";
+import {
+  Phone,
+  Mail,
+  MapPin,
+  ArrowRight,
+  Instagram,
+  Facebook,
+} from "lucide-react";
 
 const ContactSection = () => {
   const [submitted, setSubmitted] = useState(false);
@@ -24,7 +31,10 @@ const ContactSection = () => {
           transition={{ duration: 0.5 }}
           className="text-3xl font-bold text-heading mb-12"
         >
-          Get In <span className="bg-[#14B897] text-white px-2 py-1">Touch</span>
+          Get In{" "}
+          <span className="bg-[#14B897] text-white px-2 py-1">
+            Touch
+          </span>
         </motion.h2>
 
         <div className="grid md:grid-cols-2 gap-12">
@@ -44,21 +54,48 @@ const ContactSection = () => {
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
                   <Mail className="w-6 h-6 text-primary" />
                 </div>
-                <p className="text-lg font-semibold text-heading mb-2">Thank you!</p>
-                <p className="text-sm text-body">We'll get back to you shortly.</p>
+                <p className="text-lg font-semibold text-heading mb-2">
+                  Thank you!
+                </p>
+                <p className="text-sm text-body">
+                  We'll get back to you shortly.
+                </p>
               </motion.div>
             ) : (
-              <form onSubmit={handleSubmit} className="space-y-4 bg-[#14B897] p-6 rounded-lg">
+              <form
+                onSubmit={handleSubmit}
+                className="space-y-4 bg-[#14B897] p-6 rounded-lg"
+              >
                 {[
-                  { id: "name", label: "Name", type: "text", required: true, placeholder: "Enter your full name" },
-                  { id: "phone", label: "Phone", type: "tel", required: false, placeholder: "604-123-4567" },
-                  { id: "email", label: "Email", type: "email", required: true, placeholder: "your.email@example.com" },
+                  {
+                    id: "name",
+                    label: "Name",
+                    type: "text",
+                    required: true,
+                    placeholder: "Enter your full name",
+                  },
+                  {
+                    id: "phone",
+                    label: "Phone",
+                    type: "tel",
+                    required: false,
+                    placeholder: "604-123-4567",
+                  },
+                  {
+                    id: "email",
+                    label: "Email",
+                    type: "email",
+                    required: true,
+                    placeholder: "your.email@example.com",
+                  },
                 ].map((field) => (
-                  <div key={field.id} className="relative">
+                  <div key={field.id}>
                     <label
                       htmlFor={field.id}
-                      className={`block text-sm font-medium mb-1 transition-colors duration-200 ${
-                        focused === field.id ? "text-white" : "text-white/90"
+                      className={`block text-sm font-medium mb-1 ${
+                        focused === field.id
+                          ? "text-white"
+                          : "text-white/90"
                       }`}
                     >
                       {field.label}
@@ -74,11 +111,14 @@ const ContactSection = () => {
                     />
                   </div>
                 ))}
+
                 <div>
                   <label
                     htmlFor="message"
-                    className={`block text-sm font-medium mb-1 transition-colors duration-200 ${
-                      focused === "message" ? "text-white" : "text-white/90"
+                    className={`block text-sm font-medium mb-1 ${
+                      focused === "message"
+                        ? "text-white"
+                        : "text-white/90"
                     }`}
                   >
                     Message
@@ -92,12 +132,13 @@ const ContactSection = () => {
                     className={`${inputClass} resize-none`}
                   />
                 </div>
+
                 <button
                   type="submit"
                   className="group w-full inline-flex items-center justify-center gap-2 px-5 py-3 bg-white text-[#14B897] font-semibold text-sm rounded-md hover:bg-white/90 transition-all duration-200 active:scale-[0.98]"
                 >
                   Request a Quote
-                  <ArrowRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" />
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
                 </button>
               </form>
             )}
@@ -111,44 +152,98 @@ const ContactSection = () => {
             transition={{ duration: 0.4, delay: 0.1 }}
             className="space-y-6"
           >
+            {/* Contact Info */}
             <div>
-              <h3 className="text-sm font-semibold text-heading mb-3">Contact Information</h3>
+              <h3 className="text-sm font-semibold text-heading mb-3">
+                Contact Information
+              </h3>
+
               <div className="space-y-3 text-sm text-body">
                 <div className="flex items-start gap-3">
                   <Phone className="w-4 h-4 text-primary mt-0.5" />
                   <div>
-                    <p>Manny: <a href="tel:6048970308" className="text-primary font-medium hover:underline transition-colors">604-897-0308</a></p>
-                    <p>Nav: <a href="tel:6044469360" className="text-primary font-medium hover:underline transition-colors">604-446-9360</a></p>
+                    <p>
+                      Manny:{" "}
+                      <a
+                        href="tel:6048970308"
+                        className="text-primary font-medium hover:underline"
+                      >
+                        604-897-0308
+                      </a>
+                    </p>
+                    <p>
+                      Nav:{" "}
+                      <a
+                        href="tel:6044469360"
+                        className="text-primary font-medium hover:underline"
+                      >
+                        604-446-9360
+                      </a>
+                    </p>
                   </div>
                 </div>
+
                 <div className="flex items-center gap-3">
                   <Mail className="w-4 h-4 text-primary" />
-                  <a href="mailto:goodmanelectricltd@gmail.com" className="text-primary font-medium hover:underline transition-colors">
+                  <a
+                    href="mailto:goodmanelectricltd@gmail.com"
+                    className="text-primary font-medium hover:underline"
+                  >
                     goodmanelectricltd@gmail.com
                   </a>
                 </div>
+
                 <div className="flex items-center gap-3">
                   <MapPin className="w-4 h-4 text-primary" />
-                  <span> Lower Mainland & Surrounding Regions</span>
+                  <span>Lower Mainland & Surrounding Regions</span>
                 </div>
               </div>
             </div>
 
+            {/* Call Buttons */}
             <div className="pt-4 border-t border-border space-y-3">
               <a
                 href="tel:6048970308"
-                className="group flex items-center justify-center gap-2 w-full px-5 py-2.5 border border-border text-foreground font-medium text-sm rounded-md hover:border-primary hover:text-primary transition-all duration-200 active:scale-[0.98]"
+                className="flex items-center justify-center gap-2 w-full px-5 py-2.5 border border-border text-sm rounded-md hover:border-primary hover:text-primary"
               >
-                <Phone className="w-4 h-4 transition-transform duration-200 group-hover:rotate-12" />
+                <Phone className="w-4 h-4" />
                 Call Manny
               </a>
+
               <a
                 href="tel:6044469360"
-                className="group flex items-center justify-center gap-2 w-full px-5 py-2.5 border border-border text-foreground font-medium text-sm rounded-md hover:border-primary hover:text-primary transition-all duration-200 active:scale-[0.98]"
+                className="flex items-center justify-center gap-2 w-full px-5 py-2.5 border border-border text-sm rounded-md hover:border-primary hover:text-primary"
               >
-                <Phone className="w-4 h-4 transition-transform duration-200 group-hover:rotate-12" />
+                <Phone className="w-4 h-4" />
                 Call Nav
               </a>
+            </div>
+
+            {/* Social Links */}
+            <div className="pt-4 border-t border-border">
+              <p className="text-sm font-semibold text-heading mb-3">
+                Follow Us
+              </p>
+
+              <div className="flex gap-4">
+                <a
+                  href="https://instagram.com/yourpage"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 flex items-center justify-center border border-border rounded-md hover:border-primary hover:text-primary"
+                >
+                  <Instagram className="w-5 h-5" />
+                </a>
+
+                <a
+                  href="https://facebook.com/yourpage"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 flex items-center justify-center border border-border rounded-md hover:border-primary hover:text-primary"
+                >
+                  <Facebook className="w-5 h-5" />
+                </a>
+              </div>
             </div>
           </motion.div>
         </div>
