@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Phone, CheckCircle2, ArrowRight, ChevronDown } from "lucide-react";
 import { useState } from "react";
-import heroImg from "@/assets/hero-electrician.jpg";
+import heroImg from "@/assets/hero-electrician.png";
 
 const trustItems = [
   "Licensed & Insured",
