@@ -3,17 +3,17 @@ import { ArrowUpRight } from "lucide-react";
 import panelImg from "@/assets/project-panel.jpg";
 import evImg from "@/assets/project-ev.jpg";
 import lightingImg from "@/assets/project-lighting.jpg";
-import projectBox from "@/assets/project-box.jpg";
+import commercialImg from "@/assets/project-commercial.jpg";
 import outdoorImg from "@/assets/project-outdoor.jpg";
-import boxImg from "@/assets/project-box.jpg";
+import projectPanel from "@/assets/project-panel.jpg";
 
 const projects = [
   { img: panelImg, title: "Panel Upgrade", desc: "200A residential panel upgrade in Surrey with whole-home surge protection." },
   { img: evImg, title: "EV Charger Install", desc: "Level 2 EV charger installation for a Langley homeowner — clean conduit run." },
-  { img: lightingImg, title: "Recessed Lighting", desc: "Full pot light layout and installation for a modern Burnaby living room." },
-  { img: projectBox, title: "Commercial Fit-Out", desc: "Complete electrical for a new retail space in Richmond — lighting, data, power." },
-  { img: outdoorImg, title: "Landscape Lighting", desc: "Low-voltage pathway and garden lighting for a White Rock residence." },
-  { img: boxImg, title: "Kitchen Renovation", desc: "Under-cabinet LEDs, pendant fixtures, and dedicated circuits in Coquitlam." },
+  { img: lightingImg, title: "Living Room Lighting", desc: "Full lighting layout and installation for a modern Burnaby living room." },
+  { img: commercialImg, title: "Clean Outdoor Installs", desc: "Complete electrical install in outdoor" },
+  { img: outdoorImg, title: "House Lighting", desc: "Festive Lightings" },
+  { img: projectPanel, title: "Kitchen Renovation", desc: "Under-cabinet LEDs, pendant fixtures, and dedicated circuits in Coquitlam." },
 ];
 
 const ProjectGallery = () => {
