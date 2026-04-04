@@ -8,12 +8,12 @@ import photo5 from "@/assets/photo5.jpg";
 import photo6 from "@/assets/photo6.jpg";
 
 const projects = [
-  { img: photo1, title: "Panel Upgrade", desc: "200A residential panel upgrade in Surrey with whole-home surge protection." },
-  { img: photo2, title: "EV Charger Install", desc: "Level 2 EV charger installation for a Langley homeowner — clean conduit run." },
-  { img: photo3, title: "Living Room Lighting", desc: "Full lighting layout and installation for a modern Burnaby living room." },
-  { img: photo4, title: "Clean Outdoor Installs", desc: "Complete electrical install in outdoor" },
-  { img: photo5, title: "House Lighting", desc: "Festive Lightings" },
-  { img: photo6, title: "Kitchen Renovation", desc: "Under-cabinet LEDs, pendant fixtures, and dedicated circuits in Coquitlam." },
+  { img: photo1, title: "Exterior Lighting Design", desc: "Elegant lighting that enhances both function and curb appeal." },
+  { img: photo2, title: "Refined Interior Lighting.", desc: "Seamless illumination designed for comfort and style." },
+  { img: photo3, title: "Panel & Meter Systems", desc: "Clean, compliant distribution designed for efficiency and scale." },
+  { img: photo4, title: "Smart Home Integration", desc: "Thoughtfully wired spaces for seamless modern living." },
+  { img: photo5, title: "Outdoor Electrical Setup", desc: "Robust exterior installations built for safety and durability." },
+  { img: photo6, title: "Panel & Meter Systems", desc: "Clean, compliant distribution designed for efficiency and scale." },
 ];
 
 const ProjectGallery = () => {
