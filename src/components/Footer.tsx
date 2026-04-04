@@ -32,9 +32,9 @@ const Footer = () => {
               href="https://www.instagram.com/goodmanelectricltd?igsh=Z29sbzlidGUwbWdl&utm_source=qr"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-9 h-9 flex items-center justify-center border border-border rounded-md hover:border-primary hover:text-primary transition-all"
+              className="w-12 h-12 flex items-center justify-center bg-gradient-to-br from-pink-500 via-red-500 to-yellow-500 rounded-lg hover:scale-110 transition-all duration-300 shadow-lg hover:shadow-xl"
             >
-              <Instagram className="w-4 h-4" />
+              <Instagram className="w-6 h-6 text-white" />
             </a>
           </div>
         </div>

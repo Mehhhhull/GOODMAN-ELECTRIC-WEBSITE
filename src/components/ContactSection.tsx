@@ -229,9 +229,9 @@ const ContactSection = () => {
                   href="https://www.instagram.com/goodmanelectricltd?igsh=Z29sbzlidGUwbWdl&utm_source=qr"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 flex items-center justify-center border border-border rounded-md hover:border-primary hover:text-primary"
+                  className="w-14 h-14 flex items-center justify-center bg-gradient-to-br from-pink-500 via-red-500 to-yellow-500 rounded-xl hover:scale-110 transition-all duration-300 shadow-lg hover:shadow-xl"
                 >
-                  <Instagram className="w-5 h-5" />
+                  <Instagram className="w-7 h-7 text-white" />
                 </a>
               </div>
             </div>
