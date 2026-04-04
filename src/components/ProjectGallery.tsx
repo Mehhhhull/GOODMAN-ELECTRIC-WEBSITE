@@ -1,19 +1,19 @@
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
-import panelImg from "@/assets/project-panel.jpg";
-import evImg from "@/assets/project-ev.jpg";
-import lightingImg from "@/assets/project-lighting.jpg";
-import commercialImg from "@/assets/project-commercial.jpg";
-import outdoorImg from "@/assets/project-outdoor.jpg";
-import projectPanel from "@/assets/project-panel.jpg";
+import photo1 from "@/assets/photo1.png";
+import photo2 from "@/assets/photo2.png";
+import photo3 from "@/assets/photo3.jpg";
+import photo4 from "@/assets/photo4.jpg";
+import photo5 from "@/assets/photo5.jpg";
+import photo6 from "@/assets/photo6.jpg";
 
 const projects = [
-  { img: panelImg, title: "Panel Upgrade", desc: "200A residential panel upgrade in Surrey with whole-home surge protection." },
-  { img: evImg, title: "EV Charger Install", desc: "Level 2 EV charger installation for a Langley homeowner — clean conduit run." },
-  { img: lightingImg, title: "Living Room Lighting", desc: "Full lighting layout and installation for a modern Burnaby living room." },
-  { img: commercialImg, title: "Clean Outdoor Installs", desc: "Complete electrical install in outdoor" },
-  { img: outdoorImg, title: "House Lighting", desc: "Festive Lightings" },
-  { img: projectPanel, title: "Kitchen Renovation", desc: "Under-cabinet LEDs, pendant fixtures, and dedicated circuits in Coquitlam." },
+  { img: photo1, title: "Panel Upgrade", desc: "200A residential panel upgrade in Surrey with whole-home surge protection." },
+  { img: photo2, title: "EV Charger Install", desc: "Level 2 EV charger installation for a Langley homeowner — clean conduit run." },
+  { img: photo3, title: "Living Room Lighting", desc: "Full lighting layout and installation for a modern Burnaby living room." },
+  { img: photo4, title: "Clean Outdoor Installs", desc: "Complete electrical install in outdoor" },
+  { img: photo5, title: "House Lighting", desc: "Festive Lightings" },
+  { img: photo6, title: "Kitchen Renovation", desc: "Under-cabinet LEDs, pendant fixtures, and dedicated circuits in Coquitlam." },
 ];
 
 const ProjectGallery = () => {
