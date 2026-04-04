@@ -1,4 +1,4 @@
-import { Instagram } from "lucide-react";
+import { Instagram, Linkedin } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -41,8 +41,33 @@ const Footer = () => {
       </div>
 
       {/* Bottom strip */}
-      <div className="mt-8 pt-6 border-t border-border text-center text-xs text-body">
-        ©2026 Goodman Electric. All rights reserved.
+      <div className="mt-8 pt-6 border-t border-border">
+        <div className="text-center text-xs text-body mb-4">
+          ©2026 Goodman Electric. All rights reserved.
+        </div>
+        
+        {/* Developer Credit */}
+        <div className="flex items-center justify-center gap-3 text-xs text-body/70">
+          <span>Developed by MKS</span>
+          <div className="flex items-center gap-2">
+            <a
+              href="https://www.instagram.com/mehulkumarsinghh?igsh=Z28zZXlqMmlwdmV2"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-body transition-colors duration-300"
+            >
+              <Instagram className="w-3 h-3" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/mehul-kumar-singh-655b5432b/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-body transition-colors duration-300"
+            >
+              <Linkedin className="w-3 h-3" />
+            </a>
+          </div>
+        </div>
       </div>
     </footer>
   );
