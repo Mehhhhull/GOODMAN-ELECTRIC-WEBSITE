@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="/logo.png" />
-    <title>Goodman Electric</title>
-    <meta name="description" content="Goodman Electric provides residential and commercial electrical services across the Lower Mainland, BC. Panel upgrades, EV charger installation, renovations, and more. Call 604-897-0308." />
-    <meta name="author" content="Goodman Electric Ltd" />
-    <link rel="canonical" href="https://goodmanelectric.ca" />
 
-    <meta property="og:title" content="Goodman Electric — Licensed Electrician | Lower Mainland, BC" />
-    <meta property="og:description" content="Residential and commercial electrical services across the Lower Mainland. Licensed & insured. Call 604-897-0308." />
-    <meta property="og:type" content="website" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="/logo.png" />
+  <title>Goodman Electric</title>
+  <meta name="description"
+    content="Goodman Electric provides residential and commercial electrical services across the Lower Mainland, BC. Panel upgrades, EV charger installation, renovations, and more. Call 604-897-0308." />
+  <meta name="author" content="Goodman Electric Ltd" />
+  <link rel="canonical" href="https://goodmanelectric.ca" />
 
-    <script type="application/ld+json">
+  <meta property="og:title" content="Goodman Electric — Licensed Electrician | Lower Mainland, BC" />
+  <meta property="og:description"
+    content="Residential and commercial electrical services across the Lower Mainland. Licensed & insured. Call 604-897-0308." />
+  <meta property="og:type" content="website" />
+
+  <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Electrician",
@@ -28,9 +31,20 @@
       "serviceType": ["Residential Electrician", "Commercial Electrician", "EV Charger Installation", "Panel Upgrades"]
     }
     </script>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PRFQFJEX0G"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-PRFQFJEX0G');
+  </script>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
 </html>
